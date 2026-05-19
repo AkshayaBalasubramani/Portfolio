@@ -671,7 +671,7 @@ footer p {
 }
 
 .profile-img {
-  width: 400px;
+  width: 350px;
   height: 400px;
   background-image: url('./assets/profile-pic.png');
   background-size: cover;
