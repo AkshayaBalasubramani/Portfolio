@@ -697,3 +697,24 @@ footer p {
   }
 
 }
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-img {
+  -webkit-user-drag: none;
+  user-select: none;
+
+  pointer-events: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: transparent;
+
+  z-index: 10;
+}
