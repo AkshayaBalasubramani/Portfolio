@@ -1,14 +1,31 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* Design tokens */
+:root {
+  --bg-1: 22 18 54; /* dark indigo as RGB triple */
+  --bg-2: 30 58 138; /* blue */
+  --accent-1: 255 116 118; /* coral */
+  --accent-2: 123 97 255; /* purple */
+  --muted: 85 85 85;
+  --card-bg: 255 255 255;
+  --glass-opacity: 0.72;
+  --page-padding: 10rem;
+}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, rgba(var(--bg-1),1) 0%, rgba(var(--bg-2),1) 100%);
+  min-height: 100vh;
+  color: rgb(var(--muted));
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
 html {
@@ -16,7 +33,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(var(--muted));
 }
 
 /* TRANSITION */
@@ -151,9 +168,11 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
+  margin: 0 var(--page-padding);
   min-height: fit-content;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: all 700ms cubic-bezier(.2,.9,.2,1);
 }
 
 .section-container {
@@ -229,6 +248,10 @@ section {
   border-radius: 2rem;
 }
 
+.btn:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -296,11 +319,18 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  background: rgba(var(--card-bg), var(--glass-opacity));
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 6px 18px rgba(8,13,43,0.35);
+  backdrop-filter: blur(6px);
   text-align: center;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.details-container:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(8,13,43,0.45);
 }
 
 .section-container {
@@ -361,7 +391,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
 }
 
 .project-img {
@@ -369,6 +399,57 @@ article .icon {
   width: 90%;
   height: 90%;
 }
+
+.project-title{
+  color: white;
+}
+
+.project-btn{
+  color: white;
+  background: linear-gradient(90deg, rgba(var(--accent-1),1), rgba(var(--accent-2),1));
+  border: none;
+}
+
+/* Background decorative blob */
+.bg-blob{
+  position: fixed;
+  left: -10vw;
+  top: -10vh;
+  width: 60vw;
+  height: 60vw;
+  max-width: 900px;
+  max-height: 900px;
+  background: radial-gradient(circle at 30% 30%, rgba(var(--accent-1),0.95), rgba(var(--accent-2),0.85));
+  filter: blur(80px) saturate(120%);
+  z-index: 0;
+  opacity: 0.9;
+  transform: translate3d(0,0,0);
+  animation: blobFloat 18s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: 45% 55% 60% 40% / 45% 40% 60% 55%;
+}
+
+/* Reveal helper class applied by JS */
+.reveal{
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@keyframes blobFloat{
+  0%{ transform: translateY(0) translateX(0) scale(1); }
+  25%{ transform: translateY(-3%) translateX(2%) scale(1.02); }
+  50%{ transform: translateY(1%) translateX(-2%) scale(0.98); }
+  75%{ transform: translateY(-2%) translateX(1%) scale(1.01); }
+  100%{ transform: translateY(0) translateX(0) scale(1); }
+}
+
+/* Small utilities */
+.title{ color: white; }
+
+.icon{ filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25)); }
+
+/* ensure content sits above blob */
+nav, section, footer, .section__text, .details-container{ position: relative; z-index: 1; }
 
 .project-title {
   margin: 1rem;

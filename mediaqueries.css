@@ -100,4 +100,6 @@
   .text-container {
     text-align: justify;
   }
+  /* hide decorative blob on small screens for performance */
+  .bg-blob{ display: none; }
 }
