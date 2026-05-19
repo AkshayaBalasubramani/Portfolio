@@ -11,7 +11,7 @@
   <body>
     <div class="bg-blob" aria-hidden="true"></div>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Akshaya</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -22,7 +22,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Akshaya</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -37,18 +37,19 @@
         </div>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Akshaya profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Akshaya</h1>
+        <p class="section__text__p2">AI ML Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume.pdf')"
           >
             Download CV
           </button>
@@ -61,288 +62,620 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/akshaya-b-a2a439253/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/akshayaBalasubramani'"
           />
         </div>
       </div>
     </section>
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+
+  <div class="section-container">
+    <div class="about-details-container">
+
+      <div class="about-containers">
+
+        <!-- Experience Card -->
+        <div class="details-container">
           <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
           />
+
+          <h3>Experience</h3>
+
+          <p>
+            1+ Years <br />
+            AI/ML Engineering & Cybersecurity AI
+          </p>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
+
+        <!-- Education Card -->
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+
+          <h3>Education</h3>
+
+          <p>
+            B.E Computer Science (Data Science) <br />
+            Dayananda Sagar University <br />
+            GPA: 9.52 / 10
+          </p>
         </div>
+
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+
+      <!-- About Text -->
+      <div class="text-container">
+        <p>
+          AI/ML Engineer with production experience building LLM-powered
+          cybersecurity systems, anomaly detection models, and intelligent SOC
+          automation platforms at SISA Information Security.
+
+          Experienced in developing Retrieval-Augmented Generation (RAG)
+          pipelines over large-scale SIEM telemetry, UEBA anomaly detection
+          systems, and AI-driven Digital Forensics & Incident Response (DFIR)
+          chatbots for structured forensic investigations.
+
+          Skilled in LangChain orchestration, FastAPI backend development,
+          vector databases like Pinecone, Milvus, and Chroma, along with
+          full-stack applied machine learning, data engineering, and DevOps.
+
+          Passionate about intelligent threat detection, automated SOC
+          operations, and scalable AI systems for enterprise cybersecurity.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  />
     </section>
+
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Technical Skills</h1>
+
+  <div class="experience-details-container">
+    <div class="skills-grid">
+
+      <!-- AI & ML -->
+      <div class="details-container skill-card">
+        <div class="skill-header">
+          <img
+            src="./assets/experience.png"
+            alt="AI icon"
+            class="skill-main-icon"
+          />
+          <h2 class="experience-sub-title">
+            AI & Machine Learning
+          </h2>
+        </div>
+
+        <div class="skill-tags">
+
+          <span>LLMs</span>
+          <span>RAG</span>
+          <span>LangChain</span>
+          <span>TensorFlow</span>
+          <span>PyTorch</span>
+          <span>NLP</span>
+          <span>Scikit-learn</span>
+          <span>Hugging Face</span>
+          <span>CNNs</span>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title" color="black">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+
+      <!-- Cybersecurity -->
+      <div class="details-container skill-card">
+        <div class="skill-header">
+          <img
+            src="./assets/experience.png"
+            alt="Security icon"
+            class="skill-main-icon"
+          />
+
+          <h2 class="experience-sub-title">
+            Cybersecurity AI
+          </h2>
+        </div>
+
+        <div class="skill-tags">
+
+          <span>Threat Intelligence</span>
+          <span>DFIR</span>
+          <span>SOC Alert Triage</span>
+          <span>SIEM / ELK</span>
+          <span>Incident Response</span>
+          <span>UEBA</span>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+
+      <!-- Backend -->
+      <div class="details-container skill-card">
+        <div class="skill-header">
+          <img
+            src="./assets/experience.png"
+            alt="Backend icon"
+            class="skill-main-icon"
+          />
+
+          <h2 class="experience-sub-title">
+            Backend & APIs
+          </h2>
+        </div>
+
+        <div class="skill-tags">
+
+          <span>FastAPI</span>
+          <span>REST APIs</span>
+          <span>Streamlit</span>
+          <span>Uvicorn</span>
+          <span>Docker</span>
+          <span>CI/CD</span>
+
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="details-container skill-card">
+        <div class="skill-header">
+          <img
+            src="./assets/experience.png"
+            alt="Database icon"
+            class="skill-main-icon"
+          />
+
+          <h2 class="experience-sub-title">
+            Databases & Vector Stores
+          </h2>
+        </div>
+
+        <div class="skill-tags">
+
+          <span>Pinecone</span>
+          <span>Chroma</span>
+          <span>Elasticsearch</span>
+          <span>Kafka</span>
+          <span>MySQL</span>
+
+        </div>
+      </div>
+
+      <!-- Programming -->
+      <div class="details-container skill-card">
+        <div class="skill-header">
+          <img
+            src="./assets/experience.png"
+            alt="Code icon"
+            class="skill-main-icon"
+          />
+
+          <h2 class="experience-sub-title">
+            Programming
+          </h2>
+        </div>
+
+        <div class="skill-tags">
+
+          <span>Python</span>
+          <span>Java</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>C</span>
+
+        </div>
+      </div>
+
+      <!-- Visualization -->
+      <div class="details-container skill-card">
+        <div class="skill-header">
+          <img
+            src="./assets/experience.png"
+            alt="Visualization icon"
+            class="skill-main-icon"
+          />
+
+          <h2 class="experience-sub-title">
+            Visualization
+          </h2>
+        </div>
+
+        <div class="skill-tags">
+
+          <span>Power BI</span>
+          <span>Matplotlib</span>
+          <span>Seaborn</span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
     </section>
+
+   <section id="projects">
+
+  <p class="section__text__p1">Explore My Journey</p>
+  <h1 class="title">Experience & Projects</h1>
+
+  <!-- ================= PROFESSIONAL EXPERIENCE ================= -->
+
+  <div class="project-category">
+    <h2 class="category-title">Professional Experience</h2>
+
+    <div class="projects-grid">
+
+      <!-- AI/ML Engineer -->
+      <div class="project-card">
+
+        <img
+          src="./assets/project-1.png"
+          alt="AI ML Engineer"
+          class="project-img"
+        />
+
+        <div class="project-content">
+
+          <h2 class="experience-sub-title project-title">
+            AI/ML Engineer
+          </h2>
+
+          <p class="project-company">
+            SISA Information Security • Jul 2025 – Present
+          </p>
+
+          <p class="project-short">
+            Building AI-powered cybersecurity systems including DFIR
+            chatbots, UEBA anomaly detection models, and intelligent
+            SOC automation pipelines.
+          </p>
+
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="toggleDetails('exp1')"
+          >
+            View Details
+          </button>
+
+          <div id="exp1" class="project-details">
+
+            <ul>
+              <li>
+                Architecting an AI-powered DFIR chatbot for structured
+                forensic investigations and automated evidence guidance.
+              </li>
+
+              <li>
+                Designed multi-turn LangChain workflows with
+                context-aware prompting for investigative reasoning.
+              </li>
+
+              <li>
+                Developed UEBA anomaly detection models for Windows,
+                Linux, Data Exfiltration, and Reconnaissance telemetry.
+              </li>
+
+              <li>
+                Optimized ML engines inside a production SIEM platform
+                improving SOC automation and pipeline intelligence.
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- AI/ML Intern -->
+      <div class="project-card">
+
+        <img
+          src="./assets/project-1.png"
+          alt="AI ML Intern"
+          class="project-img"
+        />
+
+        <div class="project-content">
+
+          <h2 class="experience-sub-title project-title">
+            AI/ML Intern
+          </h2>
+
+          <p class="project-company">
+            SISA Information Security • Jul 2024 – Jul 2025
+          </p>
+
+          <p class="project-short">
+            Worked on RAG pipelines, vector search systems, FastAPI
+            inference APIs, and LLM-powered threat intelligence systems.
+          </p>
+
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="toggleDetails('exp2')"
+          >
+            View Details
+          </button>
+
+          <div id="exp2" class="project-details">
+
+            <ul>
+
+              <li>
+                Designed Retrieval-Augmented Generation pipelines over
+                large-scale SIEM telemetry for SOC alert triage.
+              </li>
+
+              <li>
+                Embedded millions of security logs into Pinecone,
+                Milvus, and Chroma vector databases.
+              </li>
+
+              <li>
+                Built FastAPI inference endpoints integrated with an
+                Angular frontend for incident management.
+              </li>
+
+              <li>
+                Contributed to LLM-powered threat investigation systems
+                reducing manual analyst triage effort.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= PERSONAL PROJECTS ================= -->
+
+  <div class="project-category">
+    <h2 class="category-title">Personal Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Skin Care -->
+      <div class="project-card">
+
+        <img
+          src="./assets/project-3.png"
+          alt="Skin Care Recommendation"
+          class="project-img"
+        />
+
+        <div class="project-content">
+
+          <h2 class="experience-sub-title project-title">
+            Skin Care Recommendation System
+          </h2>
+
+          <p class="project-short">
+            AI-powered skincare recommendation platform using CNNs,
+            YOLOv8, and recommendation systems.
+          </p>
+
+          <div class="btn-container">
+
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="toggleDetails('proj1')"
+            >
+              View Details
+            </button>
+
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+
+          </div>
+
+          <div id="proj1" class="project-details">
+
+            <ul>
+
+              <li>
+                Built a skincare recommendation engine using TensorFlow
+                CNN models with 91.66% classification accuracy.
+              </li>
+
+              <li>
+                Integrated YOLOv8 for blackhead, papule, and pustule
+                detection.
+              </li>
+
+              <li>
+                Used Roboflow APIs for acne severity classification.
+              </li>
+
+              <li>
+                Developed recommendation logic using cosine similarity
+                and Count Vectorization.
+              </li>
+
+              <li>
+                Deployed the platform using Streamlit UI.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- California House Price -->
+      <div class="project-card">
+
+        <img
+          src="./assets/project-3.png"
+          alt="California House Price Prediction"
+          class="project-img"
+        />
+
+        <div class="project-content">
+
+          <h2 class="experience-sub-title project-title">
+            California House Price Prediction
+          </h2>
+
+          <p class="project-short">
+            End-to-end machine learning pipeline for California
+            housing price prediction.
+          </p>
+
+          <div class="btn-container">
+
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="toggleDetails('proj2')"
+            >
+              View Details
+            </button>
+
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+
+          </div>
+
+          <div id="proj2" class="project-details">
+
+            <ul>
+
+              <li>
+                Built complete ML pipelines including preprocessing,
+                scaling, feature engineering, and analysis.
+              </li>
+
+              <li>
+                Trained Decision Tree, Random Forest, and Linear
+                Regression models.
+              </li>
+
+              <li>
+                Used RMSE for evaluation and GridSearchCV for
+                hyperparameter tuning.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Facial Emotion -->
+      <div class="project-card">
+
+        <img
+          src="./assets/project-3.png"
+          alt="Facial Emotion Classification"
+          class="project-img"
+        />
+
+        <div class="project-content">
+
+          <h2 class="experience-sub-title project-title">
+            Compound Facial Emotion Classification
+          </h2>
+
+          <p class="project-short">
+            Multi-stage deep learning system for recognizing complex
+            human emotions using computer vision.
+          </p>
+
+          <div class="btn-container">
+
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="toggleDetails('proj3')"
+            >
+              View Details
+            </button>
+
+          </div>
+
+          <div id="proj3" class="project-details">
+
+            <ul>
+
+              <li>
+                Combined machine learning, deep learning, and texture
+                analysis techniques for emotion classification.
+              </li>
+
+              <li>
+                Used Haar Cascade, CNN, VGGNet, EfficientNet, KNN,
+                and SVM models.
+              </li>
+
+              <li>
+                Incorporated facial landmarks, LBP features, and
+                temporal motion analysis.
+              </li>
+
+              <li>
+                Evaluated using accuracy, precision, recall, and
+                F1-score metrics.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+
+</section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -353,7 +686,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:akshaya.balasubramani6@gmail.com">akshaya.balasubramani6@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -376,8 +709,11 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Akshaya. All Rights Reserved.</p>
     </footer>
+    <script>
+      
+      </script>
     <script src="script.js"></script>
   </body>
 </html>
